@@ -24,7 +24,7 @@ function createConfig () {
         }
       }
     },
-    fileStorage: true,
+    fileStorage: false,
     storage: {
       active: 's3'
     },
