@@ -1,5 +1,8 @@
 ## Ghost version 2.X hosted on Heroku
 
+### Usage
+- Copy the `HTTPS` url of this git repo & add it as your application's **buildpack** in Heroku (ie. `https://github.com/darcyclarke/ghost-on-heroku.git`)
+
 ### Things you should know
 
 After deployment,
