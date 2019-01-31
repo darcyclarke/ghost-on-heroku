@@ -1,13 +1,4 @@
-## Ghost version 2.X
-
-The latest release of Ghost is now supported! Changes include:
-
-  * Requires MySQL database, available through either of two add-ons:
-    * [JawsDB](https://elements.heroku.com/addons/jawsdb) (deploy default)
-    * [ClearDB](https://elements.heroku.com/addons/cleardb)
-  * `HEROKU_URL` config var renamed to `PUBLIC_URL` to avoid using Heroku's namespace
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+## Ghost version 2.X hosted on Heroku
 
 ### Things you should know
 
