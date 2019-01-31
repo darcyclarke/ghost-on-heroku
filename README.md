@@ -121,11 +121,3 @@ This can be automated by adding the following line to `Procfile`:
 ```
 release: knex-migrator migrate --mgpath node_modules/ghost
 ```
-
-## Problems?
-
-If you have problems using your instance of Ghost, you should check the [official documentation](http://support.ghost.org/) or open an issue on [the official issue tracker](https://github.com/TryGhost/Ghost/issues). If you discover an issue with the deployment process provided by *this repository*, then [open an issue here](https://github.com/cobyism/ghost-on-heroku).
-
-## License
-
-Released under the [MIT license](./LICENSE), just like the Ghost project itself.
