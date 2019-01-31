@@ -3,6 +3,7 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ### Usage
+- Hit the link above for a one-click install **or**
 - Copy the `HTTPS` url of this git repo & add it as your application's **buildpack** in Heroku (ie. `https://github.com/darcyclarke/ghost-on-heroku.git`)
 
 ### Things you should know
