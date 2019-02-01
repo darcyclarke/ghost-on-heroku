@@ -17,7 +17,7 @@
     "dotenv": "^6.2.0"
   },
   "engines": {
-    "node": "8.x"
+    "node": "10.x"
   },
   "scripts": {
     "start": "node server.js",
