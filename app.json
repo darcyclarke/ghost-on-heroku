@@ -27,6 +27,6 @@
     "AWS_S3_BUCKET": {
       "description": "Name of your S3 bucket on AWS, if using S3 file storage.",
       "required": false
-    },
+    }
   }
 }
