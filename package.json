@@ -13,12 +13,17 @@
     "casper": "github:tryghost/Casper#2.1.0",
     "ghost": "^2.13.1",
     "ghost-storage-adapter-s3": "^2.8.0",
-    "mysql": "^2.16.0"
+    "mysql": "^2.16.0",
+    "dotenv": "^6.2.0"
   },
   "engines": {
     "node": "8.x"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "s3": "node s3.js"
+  },
+  "devDependencies": {
+    "s3": "^4.4.0"
   }
 }
