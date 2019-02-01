@@ -24,21 +24,9 @@
       "description": "Region of your S3 bucket on AWS, if using S3 file storage.",
       "required": false
     },
-    "GHOST_STORAGE_ADAPTER_S3_PATH_BUCKET": {
+    "AWS_S3_BUCKET": {
       "description": "Name of your S3 bucket on AWS, if using S3 file storage.",
       "required": false
     },
-    "GHOST_STORAGE_ADAPTER_S3_ASSET_HOST": {
-      "description": "Optional custom CDN asset host url, if using S3 file storage.",
-      "required": false
-    },
-    "GHOST_STORAGE_ADAPTER_S3_PATH_PREFIX": {
-      "description": "Optional path prefix, if using S3 file storage.",
-      "required": false
-    },
-    "GHOST_STORAGE_ADAPTER_S3_ENDPOINT": {
-      "description": "Optional endpoint url (only required for 3rd-party S3 providers), if using S3 file storage.",
-      "required": false
-    }
   }
 }

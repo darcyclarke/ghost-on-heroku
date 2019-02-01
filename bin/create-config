@@ -8,6 +8,24 @@ var envValues = require('./common/env-values')
 var appRoot = path.join(__dirname, '..')
 
 function createConfig () {
+  var fileStorage, storage;
+
+  if (!!process.env.AWS_ACCESS_KEY_ID) {
+    fileStorage = true
+    storage = {
+      active: 's3',
+      's3': {
+        accessKeyId:     process.env.AWS_ACCESS_KEY_ID,
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+        region:          process.env.AWS_DEFAULT_REGION,
+        bucket:          process.env.AWS_S3_BUCKET
+      }
+    }
+  } else {
+    fileStorage = false
+    storage = {}
+  }
+
   config = {
     url: process.env.PUBLIC_URL,
     logging: {
@@ -24,10 +42,8 @@ function createConfig () {
         }
       }
     },
-    fileStorage: false,
-    storage: {
-      active: 's3'
-    },
+    fileStorage: fileStorage,
+    storage: storage,
     database: {
       client: 'mysql',
       connection: getMysqlConfig(envValues.mysqlDatabaseUrl),
